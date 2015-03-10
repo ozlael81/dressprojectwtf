@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Kunoichi\Scripts\rotate.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\rotate.cs">
     <Files>
-      <File FileName="Assets\scripts\cameraViewObject.js" Line="16" Column="3" />
-      <File FileName="Assets\Kunoichi\Scripts\rotate.cs" Line="14" Column="57" />
+      <File FileName="Assets\scripts\cameraViewObject.js" Line="13" Column="25" />
+      <File FileName="Assets\rotate.cs" Line="19" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
