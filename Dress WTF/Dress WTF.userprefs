@@ -1,6 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Kunoichi\Scripts\rotate.cs">
+    <Files>
+      <File FileName="Assets\scripts\cameraViewObject.js" Line="16" Column="3" />
+      <File FileName="Assets\Kunoichi\Scripts\rotate.cs" Line="14" Column="57" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

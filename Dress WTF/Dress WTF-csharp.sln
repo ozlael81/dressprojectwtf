@@ -1,19 +1,23 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{45BC6896-23FB-4E42-0F2D-923036002876}") = "Dress WTF", "Assembly-CSharp-vs.csproj", "{B83D8009-E5E3-A71A-CA7D-75F15AB2EB31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{B83D8009-E5E3-A71A-CA7D-75F15AB2EB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83D8009-E5E3-A71A-CA7D-75F15AB2EB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83D8009-E5E3-A71A-CA7D-75F15AB2EB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83D8009-E5E3-A71A-CA7D-75F15AB2EB31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
+														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
