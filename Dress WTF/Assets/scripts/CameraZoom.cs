@@ -32,7 +32,7 @@ public class CameraZoom : MonoBehaviour {
 		smoothSpeed.updateSpeed();
 		if( smoothSpeed.GetCurrentSpeed() == 0)
 			return ;
-		Debug.Log( "currSpeed = " + smoothSpeed.GetCurrentSpeed());
+		//Debug.Log( "currSpeed = " + smoothSpeed.GetCurrentSpeed());
 		Transform trans = gameObject.GetComponent<Transform>();
 		float len = smoothSpeed.GetCurrentSpeed();
 		if( len < 0 && moved <= 0)
