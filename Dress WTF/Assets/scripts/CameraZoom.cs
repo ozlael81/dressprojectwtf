@@ -21,7 +21,6 @@ public class CameraZoom : MonoBehaviour {
 			//Debug.Log ( "mid : " + Input.mouseScrollDelta.x + " " + Input.mouseScrollDelta.y);
 			StartToMove( Input.mouseScrollDelta.y);
 		}
-		UpdateResistance();
 		UpdateMove ();
 	}
 
@@ -29,11 +28,8 @@ public class CameraZoom : MonoBehaviour {
 		smoothSpeed.StartToMove( delta);
 	}
 
-	void UpdateResistance() {
-		smoothSpeed.updateSpeed();
-	}
-
 	void UpdateMove() {
+		smoothSpeed.updateSpeed();
 		if( smoothSpeed.GetCurrentSpeed() == 0)
 			return ;
 		Debug.Log( "currSpeed = " + smoothSpeed.GetCurrentSpeed());
