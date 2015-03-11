@@ -6,14 +6,13 @@ public class CameraZoom : MonoBehaviour {
 	public float maxDist = 20;
 	public float speed = 1;
 	public float speedResistanceRatio = 0.95f;
-	private float speedResistance;
-	private float currSpeed = 0;
 	private float moved = 0;
-	private float currDirection = 0;
+
+	private SmoothSpeedFactor smoothSpeed;
 
 	// Use this for initialization
 	void Start () {
-		speedResistance = speed * speedResistanceRatio;
+		smoothSpeed = new SmoothSpeedFactor( speed, speedResistanceRatio);
 	}
 	
 	// Update is called once per frame
@@ -27,27 +26,19 @@ public class CameraZoom : MonoBehaviour {
 	}
 
 	void StartToMove( float delta) {
-		if( delta == 0)
-			return;
-		else if( delta < 0 )
-			currDirection = -1;
-		else if( delta > 0)
-			currDirection = 1;
-		currSpeed = Mathf.Abs(delta) * speed;
+		smoothSpeed.StartToMove( delta);
 	}
 
 	void UpdateResistance() {
-		currSpeed -= speedResistance * Time.deltaTime;;
-		if( currSpeed < 0)
-			currSpeed = 0;
+		smoothSpeed.updateSpeed();
 	}
 
 	void UpdateMove() {
-		if( currSpeed == 0)
+		if( smoothSpeed.GetCurrentSpeed() == 0)
 			return ;
-		//Debug.Log( "currSpeed = " + currSpeed + " dir : " + currDirection);
+		Debug.Log( "currSpeed = " + smoothSpeed.GetCurrentSpeed());
 		Transform trans = gameObject.GetComponent<Transform>();
-		float len = currSpeed * currDirection;
+		float len = smoothSpeed.GetCurrentSpeed();
 		if( len < 0 && moved <= 0)
 			return;
 		if( len > 0 && moved >= maxDist)
